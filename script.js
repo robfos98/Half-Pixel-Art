@@ -11,7 +11,7 @@ $(document).ready(() => {
             ctx.fill();
             ctx.lineTo(100 * x, 100 * (y + 1));
             ctx.lineTo(100 * x, 100 * y);
-            ctx.fillStyle = "dark brown";
+            ctx.fillStyle = "blue";
             ctx.fill();
         }
     }
