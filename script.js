@@ -8,10 +8,12 @@ $(document).ready(() => {
             ctx.lineTo(100 * (x + 1), 100 * y);
             ctx.lineTo(100 * (x + 1), 100 * (y + 1));
             ctx.closePath();
-            ctx.fillStyle = "brown";
+            ctx.fillStyle = "red";
             ctx.fill();
+            ctx.moveTo(100 * x, 100 * y);
             ctx.lineTo(100 * x, 100 * (y + 1));
             ctx.lineTo(100 * (x + 1), 100 * (y + 1));
+            ctx.closePath();
             ctx.fillStyle = "blue";
             ctx.fill();
         }
