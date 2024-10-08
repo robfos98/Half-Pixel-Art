@@ -7,11 +7,11 @@ $(document).ready(() => {
             ctx.beginPath();
             ctx.lineTo(100 * (x + 1), 100 * y);
             ctx.lineTo(100 * (x + 1), 100 * (y + 1));
-            ctx.fillStyle("brown");
+            ctx.fillStyle = "brown";
             ctx.fill();
             ctx.lineTo(100 * x, 100 * (y + 1));
             ctx.lineTo(100 * x, 100 * y);
-            ctx.fillStyle("dark brown");
+            ctx.fillStyle = "dark brown";
             ctx.fill();
         }
     }
