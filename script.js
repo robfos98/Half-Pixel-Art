@@ -7,6 +7,6 @@ $(document).on('click', 'canvas', function (click) {
     ctx.lineTo(100 * 0, 100 * 1);
     ctx.fillStyle = "green";
     ctx.fill();
-    print(click.pageX);
-    print(click.pageY);
+    console.log(click.pageX);
+    console.log(click.pageY);
 });
