@@ -23,5 +23,5 @@ $(document).on('click', 'canvas', function (click) {
     ctx.fillStyle = document.getElementById("color").value;
     ctx.fill();
     var img = canvas.toDataURL("image/png");
-    $(a).attr("href", img);
+    document.getElementById("download").attr("href", img);
 });
