@@ -18,6 +18,6 @@ $(document).on('click', 'canvas', function (click) {
         ctx.lineTo(16 * (x + 1), 16 * y);
         ctx.lineTo(16 * x, 16 * (y + 1));
     }
-    ctx.fillStyle = $(document).getElementById("color").value;
+    ctx.fillStyle = document.getElementById("color").value;
     ctx.fill();
 });
