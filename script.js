@@ -1,5 +1,6 @@
 $(document).on('click', 'canvas', function (click) {
-    const ctx = $(this).get(0).getContext("2d");
+    const canvas = $(this).get(0);
+    const ctx = canvas.getContext("2d");
     var x = Math.floor(click.pageX / 16);
     var y = Math.floor(click.pageY / 16);
     var up = click.pageX + click.pageY - 16 * (x + y) <= 16;
@@ -20,4 +21,6 @@ $(document).on('click', 'canvas', function (click) {
     }
     ctx.fillStyle = document.getElementById("color").value;
     ctx.fill();
+    var img = canvas.toDataURL("image/png");
+    $(a).attr("href", img);
 });
