@@ -7,12 +7,15 @@ $(document).ready(() => {
             ctx.beginPath();
             ctx.lineTo(100 * (x + 1), 100 * y);
             ctx.lineTo(100 * (x + 1), 100 * (y + 1));
+            ctx.lineTo(100 * x, 100 * y);
             ctx.fillStyle = "red";
             ctx.fill();
 
+            ctx.moveTo(100 * x, 100 * y);
             ctx.beginPath();
             ctx.lineTo(100 * x, 100 * (y + 1));
             ctx.lineTo(100 * (x + 1), 100 * (y + 1));
+            ctx.lineTo(100 * x, 100 * y);
             ctx.fillStyle = "blue";
             ctx.fill();
         }
