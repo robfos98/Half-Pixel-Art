@@ -8,8 +8,14 @@
 <body>
     <canvas width="1024" height="1024" style="position:absolute; top:0; left:0;"></canvas>
     <div style="position:absolute; top:384px; left:1028px">
-        <label for="color">Select a color:</label>
-        <input type="color" id="color" name="color" value="#ff0000ff">
+        <p>
+            <label for="color">Select a color:</label>
+            <input type="color" id="color" name="color" value="#ff0000">    
+        </p>
+        <p>
+            <label for="range">Select a transparency:</label>
+            <input type="range" min="0" max="255" value="255" class="slider" id="transparency">
+        </p>
         <a download="download" >Download as png</a>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
