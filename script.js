@@ -1,23 +1,11 @@
-$(document).ready(() => {
-    const canvas = document.getElementById("canvas");
+$(document).on('click', 'canvas', function () {
+    const canvas = $(this);
     const ctx = canvas.getContext("2d");
-    for(let x = 0; x < 10; x++) {
-        for(let y = 10; y > 0; y--) {
-            ctx.moveTo(100 * x, 100 * y);
-            ctx.beginPath();
-            ctx.lineTo(100 * (x + 1), 100 * y);
-            ctx.lineTo(100 * (x + 1), 100 * (y - 1));
-            ctx.lineTo(100 * x, 100 * y);
-            ctx.fillStyle = "red";
-            ctx.fill();
-
-            ctx.moveTo(100 * x, 100 * y);
-            ctx.beginPath();
-            ctx.lineTo(100 * x, 100 * (y - 1));
-            ctx.lineTo(100 * (x + 1), 100 * (y - 1));
-            ctx.lineTo(100 * x, 100 * y);
-            ctx.fillStyle = "blue";
-            ctx.fill();
-        }
-    }
+    ctx.moveTo(100 * 0, 100 * 1);
+    ctx.beginPath();
+    ctx.lineTo(100 * (0 + 1), 100 * 1);
+    ctx.lineTo(100 * (0 + 1), 100 * (1 - 1));
+    ctx.lineTo(100 * 0, 100 * 1);
+    ctx.fillStyle = "green";
+    ctx.fill();
 });
