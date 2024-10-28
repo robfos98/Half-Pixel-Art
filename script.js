@@ -34,9 +34,9 @@ $(document).ready(function() {
     } else {
         ctx.moveTo(16 * x, 16 * (y + 1));
         ctx.beginPath();
-        ctx.lineTo(16 * x, 16 * (y + 1) - 1);
+        ctx.lineTo(16 * x + 1, 16 * (y + 1) - 1);
         ctx.lineTo(16 * (x + 1), 16 * y);
-        ctx.lineTo(16 * (x + 1), 16 * (y+ 1));
+        ctx.lineTo(16 * (x + 1), 16 * (y + 1));
         ctx.lineTo(16 * x, 16 * (y + 1));
     }
     ctx.globalAlpha = document.getElementById("transparency").value / 255;
